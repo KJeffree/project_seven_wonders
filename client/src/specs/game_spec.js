@@ -4,11 +4,11 @@ const GameView = require('../views/game_view.js');
 describe('Cinema', function () {
   let gameView;
   let container;
-  let questionAndAnswer;
+  let answerArray;
 
   beforeEach(function () {
     container = document.querySelector('#display');
-    questionAndAnswer = {
+    answerArray = {
   		monument: "Temple of Artemis",
   		qAndA: {
   			question: "What was the Temple of Artemis less precisely known as?",
@@ -35,5 +35,10 @@ describe('Cinema', function () {
 
   it('should add 10 points for each correct answer', function () {
     const actual = gameView.checkIfAnswerCorrect(questionAndAnswer)
+    const expected = 10
+    const answer = true
+    assert.strictEqual(actual)
+    assert.strictEqual(actual)
+    assert.strictEqual(actual)
   })
 })
